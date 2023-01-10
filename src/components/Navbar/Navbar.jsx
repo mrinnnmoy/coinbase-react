@@ -1,0 +1,50 @@
+import React, { useState } from 'react';
+import "./Navbar.scss";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdClose } from "react-icons/md";
+
+const Navbar = () => {
+    const links = ["Home", "Dashboard", "Learn", "FAQ", "Contact", "About"];
+    const [isNavOpen, setIsNavOpen] = useState(false);
+    const html = document.querySelector("html");
+    html.addEventListener("click", (e) => setIsNavOpen(false));
+
+    return (
+        <div>
+            <nav state={isNavOpen ? 1 : 0} className="flex j-between a-center">
+                <div className="brand">
+                    <h2>Coinbase</h2>
+                </div>
+                <div className="toggle">
+                    {isNavOpen ? (
+                        <MdClose onClick={() => setIsNavOpen(false)} />
+                    ) : (
+                        <GiHamburgerMenu
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                setIsNavOpen(true);
+                            }}
+                        />
+                    )}
+                </div>
+                <div className={`links ${isNavOpen ? "show" : ""}`}>
+                    <ul className="flex gap-2">
+                        {links.map((link) => {
+                            return (
+                                <li key={link}>
+                                    <a href={link}>{link}</a>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
+                <div className="auth flex gap-1">
+                    <button text="Sign In" subduedButton />
+                    <button text="Sign Up" />
+                </div>
+            </nav>
+        </div>
+    )
+};
+
+export default Navbar;
