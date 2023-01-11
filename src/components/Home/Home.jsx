@@ -6,7 +6,7 @@ import badgePercent from "../../assets/badge-percent.png";
 
 const Home = () => {
     return (
-        <section className="flex j-center a-center gap">
+        <section className="home-section flex j-center a-center gap">
             <div className="content flex column gap-2">
                 <div className="subtitle">
                     <h3 className="flex a-center gap-1 blue">
