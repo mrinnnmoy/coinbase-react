@@ -1,0 +1,15 @@
+.about-section {
+    .about-button{
+        display: flex;
+        flex-direction: row;
+        svg{
+            font-size: 1.25rem;
+            padding-left: 5px;
+        }
+    }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .title-container {
+      text-align: center;
+    }
+  }
+}
