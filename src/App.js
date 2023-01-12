@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Services from "./components/Services/Services";
+import SignUp from "./components/SignUp/SignUp";
 
 function App() {
   return (
@@ -15,6 +16,11 @@ function App() {
       <DailyPrices />
       <AboutUs />
       <Services />
+      <SignUp />
+      {/* 
+      <Roadmap />
+      <Newsletter />
+      <Footer /> */}
     </div>
   );
 }
