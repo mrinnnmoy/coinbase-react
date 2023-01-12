@@ -1,8 +1,10 @@
 import React from "react";
 import AboutUs from "./components/AboutUs/AboutUs";
 import DailyPrices from "./components/DailyPrices/DailyPrices";
+import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
+import Newsletter from "./components/Newsletter/Newsletter";
 import Roadmap from "./components/Roadmap/Roadmap";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Services from "./components/Services/Services";
@@ -19,9 +21,8 @@ function App() {
       <Services />
       <SignUp />
       <Roadmap />
-      {/* 
       <Newsletter />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
