@@ -10,7 +10,7 @@ const Navbar = () => {
     html.addEventListener("click", (e) => setIsNavOpen(false));
 
     return (
-        <nav state={isNavOpen ? 1 : 0} className="flex j-between a-center">
+        <nav state={isNavOpen ? 1 : 0} className="flex j-between a-center" id="navbar">
             <div className="brand">
                 <h2>Coinbase</h2>
             </div>
