@@ -38,7 +38,7 @@ const Roadmap = () => {
         <section className="roadmap-section flex column gap">
             <div className="title-container text-center">
                 <div className="subtitle subdue">
-                    <h3>Roadmap</h3>
+                    <h2>Roadmap</h2>
                 </div>
                 <div className="title">
                     <h2>How Investing Can Change Your Future</h2>

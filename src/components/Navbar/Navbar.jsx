@@ -4,13 +4,13 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 
 const Navbar = () => {
-    const links = ["Home", "Dashboard", "Learn", "FAQ", "Contact", "About"];
+    const links = ["Home", "Dashboard", "About", "Services", "Roadmap" ];
     const [isNavOpen, setIsNavOpen] = useState(false);
     const html = document.querySelector("html");
     html.addEventListener("click", (e) => setIsNavOpen(false));
 
     return (
-        <nav state={isNavOpen ? 1 : 0} className="flex j-between a-center" id="navbar">
+        <nav state={isNavOpen ? 1 : 0} className="j-between a-center" id="navbar">
             <div className="brand">
                 <h2>Coinbase</h2>
             </div>

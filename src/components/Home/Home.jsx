@@ -26,7 +26,7 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="buttons flex gap-1">
-                    <button className="btn flex gap-1">
+                    <button className="btn flex gap-1 home-btn">
                         Try Now
                         <FaChevronCircleRight />
                     </button>
