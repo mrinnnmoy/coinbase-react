@@ -56,7 +56,7 @@ const DailyPrices = () => {
     };
 
     return (
-        <section className="price-section flex gap-2 column">
+        <section className="price-section flex gap-2 column" id="Dashboard">
             <div className="container">
                 <div className="header subdue">
                     <span>#</span>

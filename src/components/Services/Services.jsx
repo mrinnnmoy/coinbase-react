@@ -27,7 +27,7 @@ const Services = () => {
     ];
 
     return (
-        <section className="services-section flex column j-center a-center gap">
+        <section className="services-section flex column j-center a-center gap" id="Services">
             <div className="title-container flex column gap-1">
                 <div className="title text-center ">
                     <h2>Start your trading with us</h2>

@@ -5,7 +5,7 @@ import about from "../../assets/about.png";
 
 const AboutUs = () => {
     return (
-        <section className="about-section flex a-center gap">
+        <section className="about-section flex a-center gap" id="About">
             <div className="content flex column gap">
                 <div className="title-container flex column j-center a-center gap-1">
                     <div className="subtitle subdue">

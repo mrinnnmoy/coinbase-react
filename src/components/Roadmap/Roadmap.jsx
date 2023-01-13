@@ -35,7 +35,7 @@ const Roadmap = () => {
     ];
 
     return (
-        <section className="roadmap-section flex column gap">
+        <section className="roadmap-section flex column gap" id="Roadmap">
             <div className="title-container text-center">
                 <div className="subtitle subdue">
                     <h2>Roadmap</h2>

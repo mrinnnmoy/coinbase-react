@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 
 const Navbar = () => {
-    const links = ["Home", "Dashboard", "About", "Services", "Roadmap" ];
+    const links = ["Home", "Dashboard", "About", "Services", "Roadmap"];
     const [isNavOpen, setIsNavOpen] = useState(false);
     const html = document.querySelector("html");
     html.addEventListener("click", (e) => setIsNavOpen(false));
@@ -26,10 +26,17 @@ const Navbar = () => {
             </div>
             <div className={`links ${isNavOpen ? "show" : ""}`}>
                 <ul className="flex gap-2">
-                    {links.map((link) => {
+                    {/* {links.map((link) => {
                         return (
                             <li key={link}>
                                 <a href={link}>{link}</a>
+                            </li>
+                        );
+                    })} */}
+                    {links.map((link, index) => {
+                        return (
+                            <li key={index}>
+                                <a href={`#${link}`}>{link}</a>
                             </li>
                         );
                     })}
